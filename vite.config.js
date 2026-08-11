@@ -1,7 +1,11 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/TEMC/',
+  server: {
+    port: 5000,
+    host: '0.0.0.0',
+    allowedHosts: true,
+  },
   build: {
     rollupOptions: {
       input: {
